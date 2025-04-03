@@ -1,0 +1,12 @@
+{
+    "name": "gulag",
+    "version": "0.5.0",
+    "dependencies": [
+        "osg",
+        "glfw3",
+        "bullet3",
+        "assimp",
+        "tinyfiledialogs",
+        "iniparser"
+    ]
+}
