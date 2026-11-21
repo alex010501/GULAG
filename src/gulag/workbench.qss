@@ -1,0 +1,84 @@
+QMainWindow { background: $window; }
+QMainWindow::separator { background: $line; width: 4px; height: 4px; }
+QMainWindow::separator:hover { background: $accent; }
+QDockWidget { background: $panel; }
+QDockWidget::title {
+    background: $bar; color: $text; border-bottom: 1px solid $line;
+    padding: 5px 7px; text-align: left;
+}
+QDockWidget::close-button:hover, QDockWidget::float-button:hover { background: $hover; }
+QFrame#appHeader { background: $bar; }
+QTabBar#ribbonTabs { background: $bar; }
+QTabBar#ribbonTabs::tab {
+    padding: 0 15px; height: 41px; background: transparent; color: $muted;
+    border: none; border-bottom: 3px solid transparent;
+}
+QTabBar#ribbonTabs::tab:selected { color: $text; background: $selected; border-bottom: 3px solid $accent; }
+QTabBar#ribbonTabs::tab:hover { background: $hover; }
+QFrame#appHeader QToolButton { color: $text; padding: 5px 8px; background: transparent; }
+QFrame#appHeader QToolButton:hover { background: $hover; }
+QWidget#ribbonPage { background: $window; border-bottom: 1px solid $line; }
+QFrame#toolGroup { border: 0; border-right: 1px solid $line; }
+QLabel#groupLabel { color: $muted; font-size: 11px; padding: 2px; }
+QFrame#toolGroup QToolButton { padding: 5px 7px; min-width: 38px; }
+QToolButton { background: transparent; border: 1px solid transparent; border-radius: 4px; padding: 3px; }
+QToolButton:hover { background: $hover; }
+QToolButton:checked { background: $selected; color: $accent; border-color: $strong_line; }
+QToolButton:disabled { color: $disabled; }
+QToolButton::menu-indicator { width: 0; image: none; }
+QTabBar { background: $bar; }
+QTabBar::tab {
+    height: 31px; padding: 0 12px; background: $bar; color: $muted;
+    border: none; border-bottom: 2px solid transparent;
+}
+QTabBar::tab:selected { color: $text; border-bottom: 2px solid $accent; background: $panel; }
+QTabBar::tab:hover { background: $hover; }
+QWidget#plotsContents, QWidget#properties, QWidget#sceneTree,
+QWidget#console, QWidget#library, QTreeWidget, QScrollArea {
+    background: $panel; border: 0;
+}
+QPushButton {
+    background: $button; color: $text; border: 1px solid $line;
+    border-radius: 4px; padding: 3px 9px; min-height: 20px;
+}
+QPushButton:hover { background: $hover; border-color: $strong_line; }
+QPushButton:pressed { background: $selected; }
+QPushButton#addEntity {
+    min-height: 17px; padding: 1px 15px 1px 5px; font-size: 12px;
+}
+QPushButton#addEntity::menu-indicator { subcontrol-position: right center; right: 5px; width: 7px; }
+QLineEdit, QPlainTextEdit, QComboBox {
+    background: $field; border: 1px solid $line; border-radius: 4px; padding: 3px 6px;
+    selection-background-color: $accent; selection-color: $on_accent;
+}
+QLineEdit:focus, QComboBox:focus { border-color: $accent; }
+QComboBox:disabled { color: $muted; background: $hover; }
+QDoubleSpinBox { background: $field; }
+QLabel#libraryPlaceholder { color: $muted; }
+QTreeWidget#entities::item:selected { background: $selected; color: $text; }
+QTreeWidget#entities::item:hover:!selected { background: $hover; }
+QTreeWidget#entities {
+    font-size: 12px; border: none; outline: none;
+}
+QTreeWidget#entities::item { height: 18px; padding: 0 2px; }
+QTreeWidget#entities::branch:has-siblings:!adjoins-item { border-image: url(:/gulag/Images/BranchLine.svg) 0; }
+QTreeWidget#entities::branch:has-siblings:adjoins-item { border-image: url(:/gulag/Images/BranchTee.svg) 0; }
+QTreeWidget#entities::branch:!has-siblings:adjoins-item { border-image: url(:/gulag/Images/BranchEnd.svg) 0; }
+QTreeWidget#entities::branch:has-children:closed { image: url(:/gulag/Images/BranchClosed.svg); }
+QTreeWidget#entities::branch:has-children:open { image: url(:/gulag/Images/BranchOpen.svg); }
+QFrame#plotArea { background: $field; border-left: 1px solid $strong_line; border-bottom: 1px solid $strong_line; }
+QGroupBox { border: 1px solid $line; border-radius: 4px; margin-top: 8px; padding-top: 6px; }
+QGroupBox::title { subcontrol-origin: margin; left: 6px; padding: 0 4px; }
+QFrame#viewCube, QFrame#quickTools { background: $panel; border: 1px solid $line; border-radius: 6px; }
+QFrame#viewCube QToolButton { background: $button; color: $text; border: 0; padding: 0; font-size: 11px; border-radius: 2px; }
+QFrame#viewCube QToolButton:hover { background: $hover; }
+QFrame#viewCube QToolButton:checked { background: $accent; color: $on_accent; }
+QLabel#viewLabel { background: $panel; color: $text; border: 1px solid $line; border-radius: 4px; padding: 4px 9px; }
+QMenu { background: $panel; color: $text; border: 1px solid $line; padding: 4px; }
+QMenu::item { padding: 5px 20px; border-radius: 3px; }
+QMenu::item:selected { background: $hover; }
+QMenu::item:disabled { color: $disabled; }
+QMenu::separator { height: 1px; background: $line; margin: 3px 6px; }
+QLabel#dialogHeading { font-size: 18px; font-weight: 600; }
+QStatusBar { background: $bar; color: $muted; border-top: 1px solid $line; font-size: 12px; }
+QToolTip { background: $tooltip; color: $tooltip_text; border: 0; padding: 4px; }

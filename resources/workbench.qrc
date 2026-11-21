@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="/gulag">
+    <file>Fonts/FA6_Free-Solid.otf</file>
+    <file>Fonts/Cruinn_Regular.ttf</file>
+    <file>Fonts/Cruinn_Bold.ttf</file>
+    <file>Icons/USSR_Icon.ico</file>
+    <file>Images/New.png</file>
+    <file>Images/Open.png</file>
+    <file>Images/Save.png</file>
+    <file>Images/SaveAs.png</file>
+    <file>Images/Undo.png</file>
+    <file>Images/Redo.png</file>
+    <file>Images/Cut.png</file>
+    <file>Images/Copy.png</file>
+    <file>Images/Paste.png</file>
+    <file>Images/Frequency.png</file>
+    <file>Images/Timer.png</file>
+    <file>Images/Play.png</file>
+    <file>Images/Stop.png</file>
+    <file>Images/TabMenu.svg</file>
+    <file>Images/Down.svg</file>
+    <file>Images/TreeClosed.svg</file>
+    <file>Images/TreeOpen.svg</file>
+    <file>Images/AddEntity.svg</file>
+    <file>Images/Projection.svg</file>
+    <file>Images/BranchLine.svg</file>
+    <file>Images/BranchTee.svg</file>
+    <file>Images/BranchEnd.svg</file>
+    <file>Images/BranchOpen.svg</file>
+    <file>Images/BranchClosed.svg</file>
+  </qresource>
+</RCC>

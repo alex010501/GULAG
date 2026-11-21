@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Workspace</class>
+ <widget class="QMainWindow" name="workspace">
+  <widget class="QWidget" name="viewportHost"><layout class="QVBoxLayout" name="viewportLayout"/></widget>
+  <widget class="QDockWidget" name="plotsDock">
+   <property name="windowTitle"><string>Plots</string></property>
+   <attribute name="dockWidgetArea"><number>2</number></attribute>
+   <widget class="QScrollArea" name="plots">
+    <property name="widgetResizable"><bool>true</bool></property>
+    <widget class="QWidget" name="plotsContents">
+     <layout class="QVBoxLayout" name="plotsLayout">
+      <item alignment="Qt::AlignLeft"><widget class="QPushButton" name="addScope"><property name="text"><string>Add Scope</string></property></widget></item>
+      <item><spacer name="plotsStretch"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeType"><enum>QSizePolicy::Expanding</enum></property><property name="sizeHint" stdset="0"><size><width>0</width><height>0</height></size></property></spacer></item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="consoleDock">
+   <property name="windowTitle"><string>Console</string></property>
+   <attribute name="dockWidgetArea"><number>8</number></attribute>
+    <widget class="QWidget" name="console">
+     <layout class="QVBoxLayout" name="consoleLayout">
+      <item><widget class="QPlainTextEdit" name="log">
+       <property name="accessibleName"><string>Console log</string></property>
+       <property name="readOnly"><bool>true</bool></property>
+       <property name="verticalScrollBarPolicy"><enum>Qt::ScrollBarAlwaysOn</enum></property>
+      </widget></item>
+      <item><layout class="QHBoxLayout" name="commandRow">
+       <item><widget class="QLineEdit" name="command"><property name="accessibleName"><string>Console input</string></property></widget></item>
+       <item><widget class="QPushButton" name="enter"><property name="text"><string>Enter</string></property></widget></item>
+       <item><widget class="QPushButton" name="saveLog"><property name="text"><string>Save log</string></property></widget></item>
+      </layout></item>
+     </layout>
+    </widget>
+  </widget>
+  <widget class="QDockWidget" name="libraryDock">
+   <property name="windowTitle"><string>Library</string></property>
+   <attribute name="dockWidgetArea"><number>1</number></attribute>
+    <widget class="QWidget" name="library">
+     <layout class="QVBoxLayout" name="libraryLayout">
+      <item><widget class="QLabel" name="libraryPlaceholder">
+       <property name="text"><string>Robots and workcell equipment will appear here.</string></property>
+       <property name="alignment"><set>Qt::AlignCenter</set></property>
+       <property name="wordWrap"><bool>true</bool></property>
+      </widget></item>
+     </layout>
+    </widget>
+  </widget>
+  <widget class="QDockWidget" name="sceneDock">
+   <property name="windowTitle"><string>Scene Tree</string></property>
+   <attribute name="dockWidgetArea"><number>2</number></attribute>
+    <widget class="QWidget" name="sceneTree">
+     <layout class="QVBoxLayout" name="treeLayout">
+      <item alignment="Qt::AlignLeft"><widget class="QPushButton" name="addEntity"><property name="text"><string>Add entity</string></property></widget></item>
+      <item><widget class="QTreeWidget" name="entities">
+       <property name="headerHidden"><bool>true</bool></property>
+       <column><property name="text"><string>Entity</string></property></column>
+      </widget></item>
+     </layout>
+    </widget>
+   </widget>
+  <widget class="QDockWidget" name="propertiesDock">
+   <property name="windowTitle"><string>Properties</string></property>
+   <attribute name="dockWidgetArea"><number>2</number></attribute>
+    <widget class="QWidget" name="properties">
+     <layout class="QVBoxLayout" name="propertyLayout">
+      <item alignment="Qt::AlignTop"><widget class="QLabel" name="entityDetails"><property name="textFormat"><enum>Qt::PlainText</enum></property></widget></item>
+     </layout>
+    </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
